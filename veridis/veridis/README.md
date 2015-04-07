@@ -46,34 +46,34 @@ Gameplay
 
 Controls:
 
-Z   - shoot
-X   - switch target
-P   - pause
-ESC - quit game
-~   - open/close console
-BACKSPACE - switch between editing mode and playing
+- Z   - shoot
+- X   - switch target
+- P   - pause
+- ESC - quit game
+- ~   - open/close console
+- BACKSPACE - switch between editing mode and playing
 
 Debug Controls:
 
-SPC - add enemies
+- SPC - add enemies
 
 Edit Controls:
 
-WSAD - switch current map
-Left mouse click - add actor / select tile / select actor
-Right mouse click - remove actor
-1 - switch to actor editing
-2 - switch to tile editing
-F - fill map with current tile
+- WSAD - switch current map
+- Left mouse click - add actor / select tile / select actor
+- Right mouse click - remove actor
+- 1 - switch to actor editing
+- 2 - switch to tile editing
+- F - fill map with current tile
 
 Console Commands:
 
-set x y z      - set variable y of type x to value z in the settings
-save settings  - save the global variables to settings.dat
-save level     - save the current level
-load level x y - load level x y
-clear spawn    - clear all monster spawns from the current level
-malloy mode    - make the game stupidly easy
+    set x y z      - set variable y of type x to value z in the settings
+    save settings  - save the global variables to settings.dat
+    save level     - save the current level
+    load level x y - load level x y
+    clear spawn    - clear all monster spawns from the current level
+    malloy mode    - make the game stupidly easy
 
 
 
@@ -81,11 +81,11 @@ malloy mode    - make the game stupidly easy
 --Credits--
 
 Art assets from:
-  First Star Online
-  Seiken Densetsu
-  Seiken Densetsu III
-  Ramona "Rob" Seay
+- First Star Online
+- Seiken Densetsu
+- Seiken Densetsu III
+- Ramona "Rob" Seay
 
 Music:
-  Flora Fauna by Anamanaguchi
+- Flora Fauna by Anamanaguchi
 

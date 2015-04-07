@@ -1,7 +1,7 @@
 #Project: Veridis
 Timeline:  Fall 2011
 
-A 2D overhead action RPG adventure game.
+A 2D overhead action RPG adventure game with elements from SHMUP games.
 
 Plot
 ----

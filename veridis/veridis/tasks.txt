@@ -1,0 +1,53 @@
+[X] Surface drawing
+[ ] Fancy surface drawing
+[X] Color representation
+[ ] Surface tiling
+
+[X] Use hypot() <math.h>
+[X] Replace i++ with ++i in for loops
+[X] vector2d vec[0] = 3;
+
+[X] Line class
+[X] Rect class
+[X] Circle class
+[X] Geometry collisions
+[X] Actor class
+[X] Actor list (Level)
+[X] Bullet class
+[X] Bullet list (Level)
+[X] Actor-Bullet collision
+[X] Terrain rect class
+[X] Terrain list (Level)
+[X] Actor-Terrain collision
+[X] Terrain generation
+[X] Gravity
+[X] Explosion class
+[X] Actor explodes
+[X] Actor->removable
+
+[X] Camera class
+[X] Zoom camera
+
+[X] Remove m_level from Terrain, Particle, Plant
+[X] Pass camera as an argument to draw
+
+[ ] Player class
+[X] Target selection
+[X] Notify actors of actor death
+[ ] Input devices
+[ ] Weapon switching
+[X] Upgrades
+
+[X] Item class
+
+[X] Level class
+[X] Manager contains level
+
+[X] L-system class
+[X] Scenery list
+[X] Wind
+
+[X] 485 bytes in 13 blocks
+ [X] ResourceManager
+ [X] DataManager
+ [X] Surface

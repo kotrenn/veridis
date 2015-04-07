@@ -1,0 +1,46 @@
+==17917== Memcheck, a memory error detector.
+==17917== Copyright (C) 2002-2007, and GNU GPL'd, by Julian Seward et al.
+==17917== Using LibVEX rev 1804, a library for dynamic binary translation.
+==17917== Copyright (C) 2004-2007, and GNU GPL'd, by OpenWorks LLP.
+==17917== Using valgrind-3.3.0, a dynamic binary instrumentation framework.
+==17917== Copyright (C) 2000-2007, and GNU GPL'd, by Julian Seward et al.
+==17917== For more details, rerun with: -v
+==17917== 
+==17917== Syscall param writev(vector[...]) points to uninitialised byte(s)
+==17917==    at 0x38D72DC6E4: writev (in /lib64/libc-2.8.so)
+==17917==    by 0x3A46608B50: (within /usr/lib64/libxcb.so.1.0.0)
+==17917==    by 0x3A46609118: (within /usr/lib64/libxcb.so.1.0.0)
+==17917==    by 0x3A46609228: (within /usr/lib64/libxcb.so.1.0.0)
+==17917==    by 0x3A4660A20A: xcb_wait_for_reply (in /usr/lib64/libxcb.so.1.0.0)
+==17917==    by 0x3A46E4D2DD: _XReply (in /usr/lib64/libX11.so.6.2.0)
+==17917==    by 0x3A46E40DB2: XSync (in /usr/lib64/libX11.so.6.2.0)
+==17917==    by 0x3E9924071D: (within /usr/lib64/libSDL-1.2.so.0.11.2)
+==17917==    by 0x3E9924230E: (within /usr/lib64/libSDL-1.2.so.0.11.2)
+==17917==    by 0x3E992427F8: (within /usr/lib64/libSDL-1.2.so.0.11.2)
+==17917==    by 0x3E992304EC: SDL_SetVideoMode (in /usr/lib64/libSDL-1.2.so.0.11.2)
+==17917==    by 0x4026DC: main (main.cpp:28)
+==17917==  Address 0x4e5b2c7 is 4,431 bytes inside a block of size 8,680 alloc'd
+==17917==    at 0x4A05174: calloc (vg_replace_malloc.c:397)
+==17917==    by 0x3A46608DCE: xcb_connect_to_fd (in /usr/lib64/libxcb.so.1.0.0)
+==17917==    by 0x3A4660B656: xcb_connect (in /usr/lib64/libxcb.so.1.0.0)
+==17917==    by 0x3A46E4C831: _XConnectXCB (in /usr/lib64/libX11.so.6.2.0)
+==17917==    by 0x3A46E3448C: XOpenDisplay (in /usr/lib64/libX11.so.6.2.0)
+==17917==    by 0x3E99242A6A: (within /usr/lib64/libSDL-1.2.so.0.11.2)
+==17917==    by 0x3E99231683: SDL_VideoInit (in /usr/lib64/libSDL-1.2.so.0.11.2)
+==17917==    by 0x3E992080E6: SDL_InitSubSystem (in /usr/lib64/libSDL-1.2.so.0.11.2)
+==17917==    by 0x3E9920812E: SDL_Init (in /usr/lib64/libSDL-1.2.so.0.11.2)
+==17917==    by 0x4026A9: main (main.cpp:21)
+==17917== 
+==17917== ERROR SUMMARY: 44 errors from 1 contexts (suppressed: 50 from 1)
+==17917== malloc/free: in use at exit: 129,611 bytes in 1,065 blocks.
+==17917== malloc/free: 22,414 allocs, 21,349 frees, 7,029,020 bytes allocated.
+==17917== For counts of detected errors, rerun with: -v
+==17917== searching for pointers to 1,065 not-freed blocks.
+==17917== checked 927,000 bytes.
+==17917== 
+==17917== LEAK SUMMARY:
+==17917==    definitely lost: 269 bytes in 9 blocks.
+==17917==      possibly lost: 0 bytes in 0 blocks.
+==17917==    still reachable: 129,342 bytes in 1,056 blocks.
+==17917==         suppressed: 0 bytes in 0 blocks.
+==17917== Rerun with --leak-check=full to see details of leaked memory.
